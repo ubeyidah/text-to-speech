@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to speech</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="init"></button>
+    <div class="talk-anim">
+      <img src="assets/voice.gif" />
+    </div>
+    <div class="form">
+      <h2>Text to <span>Speech</span></h2>
+      <textarea
+        rows="6"
+        placeholder="Type somting else...."
+        class="text-area"
+      ></textarea>
+      <div class="slider-container">
+        <div class="title">
+          <p>Rate</p>
+          <span class="rate-value">1</span>
+        </div>
+        <input
+          class="rate-slider"
+          type="range"
+          value="1"
+          min="0"
+          max="2"
+          step="0.1"
+        />
+      </div>
+
+      <div class="slider-container">
+        <div class="title">
+          <p>Pich</p>
+          <span class="pich-value">1</span>
+        </div>
+        <input
+          class="pich-slider"
+          type="range"
+          value="1"
+          min="0"
+          max="2"
+          step="0.1"
+        />
+      </div>
+
+      <select class="options"></select>
+      <button class="btn speak-btn">speak</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
